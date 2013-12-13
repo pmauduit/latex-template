@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+
+\usepackage{graphicx}
+
+\usepackage{framed}
+\usepackage{etoolbox}
+\usepackage[usenames,dvipsnames]{color}
+
+\definecolor{shadecolor}{gray}{0.85}
+
+%%% gestion des marges.
+\addtolength{\headheight}{1.14998pt}
+\topmargin 5 pt
+\headsep 30 pt
+\textheight 630 pt
+\oddsidemargin 0 pt
+\evensidemargin 0  pt
+\textwidth 480 pt
+\def\baselinestretch{1.1}
+\addtolength{\oddsidemargin}{-0.5 cm}
+\addtolength{\evensidemargin}{-0.5 cm}
+
+\setlength\parskip{0.75em}
+\setlength\parindent{0em}
+
+\newcommand{\headrulecolor}[1]{\patchcmd{\headrule}{\hrule}{\color{#1}\hrule}{}{}}
+
+\headrulecolor{Gray}
+
+
+%%% gestion des marges.
+\addtolength{\headheight}{1.14998pt}
+\topmargin 5 pt
+\headsep 30 pt
+\textheight 630 pt
+\oddsidemargin 0 pt
+\evensidemargin 0  pt
+\textwidth 480 pt
+\def\baselinestretch{1.1}
+\addtolength{\oddsidemargin}{-0.5 cm}
+\addtolength{\evensidemargin}{-0.5 cm}
+
+\setlength\parskip{0.75em}
+\setlength\parindent{0em}
+
+%%%% corps du document
+
+\pagestyle{fancy}
+
+\begin{document}
+
+\fancyhf{}
+\fancyhf[HL]{\includegraphics[width=12em]{./ressources/camptocamp.png}}
+\fancyhf[HR]{\Large{\textcolor{Gray}{TITRE HAUT DROITE}}}
+
+\fancyhf[FL]{\small{\textcolor{Gray}{INFO BAS GAUCHE}}}
+\fancyhf[FR]{\small{\textcolor{Gray}{INFO BAS DROITE}}}
+
+
+%% debut
+
+\begin{flushright}
+  \textbf {\LARGE {\textcolor{Gray}{TITRE LONG}}}
+\end{flushright}
+
+\section*{}
+
+
+
+\end{document}
