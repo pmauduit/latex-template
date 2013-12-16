@@ -5,12 +5,15 @@
 \usepackage{fancyhdr}
 
 \usepackage{graphicx}
+\usepackage{url}
 
 \usepackage{framed}
 \usepackage{etoolbox}
+\usepackage{upquote,textcomp}
 \usepackage[usenames,dvipsnames]{color}
 
 \definecolor{shadecolor}{gray}{0.85}
+\definecolor{orange}{RGB}{255,104,10}
 
 %%% gestion des marges.
 \addtolength{\headheight}{1.14998pt}
@@ -31,6 +34,7 @@
 
 \headrulecolor{Gray}
 
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 %%% gestion des marges.
 \addtolength{\headheight}{1.14998pt}
@@ -53,9 +57,36 @@
 
 \begin{document}
 
+%% Titlepage
+\begin{titlepage}
+
+\begin{center}
+
+\color{orange}\HRule \\[1.5cm]
+
+{\color{orange} \huge \bfseries TITRE}\\[1.5cm]
+
+\end{center}
+
+
+\begin{flushright}
+
+{ \color{orange} \it  Pierre Mauduit - Camptocamp SAS}
+
+\end{flushright}
+
+\begin{center}
+\color{orange}\HRule  \\[4cm]
+\includegraphics[width=10cm]{./ressources/logo-big.png}
+\end{center}
+
+\end{titlepage}
+
+
+
 \fancyhf{}
 \fancyhf[HL]{\includegraphics[width=12em]{./ressources/camptocamp.png}}
-\fancyhf[HR]{\Large{\textcolor{Gray}{TITRE HAUT DROITE}}}
+\fancyhf[HR]{\includegraphics[width=12em]{./ressources/logo_geospatial.png}}
 
 \fancyhf[FL]{\small{\textcolor{Gray}{INFO BAS GAUCHE}}}
 \fancyhf[FR]{\small{\textcolor{Gray}{INFO BAS DROITE}}}
